@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /assets/
+
+Sitemap: https://chemi-con.elec-distributor.com/sitemap.xml
+
+# Allow all other pages
+Allow: /

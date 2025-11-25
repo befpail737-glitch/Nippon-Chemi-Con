@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Warehouse background -->
+  <rect width="400" height="300" fill="#ecf0f1" />
+  
+  <!-- Warehouse structure -->
+  <rect x="50" y="80" width="300" height="180" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2" />
+  <rect x="180" y="80" width="40" height="20" fill="#7f8c8d" /> <!-- Door -->
+  
+  <!-- Shelves -->
+  <rect x="70" y="100" width="10" height="150" fill="#2c3e50" />
+  <rect x="90" y="100" width="10" height="150" fill="#2c3e50" />
+  <rect x="110" y="100" width="10" height="150" fill="#2c3e50" />
+  <rect x="130" y="100" width="10" height="150" fill="#2c3e50" />
+  
+  <!-- Capacitor boxes on shelves -->
+  <rect x="70" y="100" width="20" height="15" fill="#003da5" />
+  <rect x="90" y="120" width="20" height="15" fill="#003da5" />
+  <rect x="110" y="140" width="20" height="15" fill="#003da5" />
+  <rect x="70" y="160" width="20" height="15" fill="#003da5" />
+  <rect x="90" y="180" width="20" height="15" fill="#003da5" />
+  <rect x="110" y="200" width="20" height="15" fill="#003da5" />
+  
+  <rect x="130" y="110" width="20" height="15" fill="#ffc72c" />
+  <rect x="150" y="130" width="20" height="15" fill="#ffc72c" />
+  <rect x="170" y="150" width="20" height="15" fill="#ffc72c" />
+  <rect x="130" y="170" width="20" height="15" fill="#ffc72c" />
+  <rect x="150" y="190" width="20" height="15" fill="#ffc72c" />
+  
+  <!-- Climate control unit -->
+  <rect x="250" y="100" width="80" height="40" fill="#34495e" rx="5" />
+  <circle cx="270" cy="120" r="8" fill="#ecf0f1" />
+  <circle cx="290" cy="120" r="8" fill="#ecf0f1" />
+  <text x="290" y="80" text-anchor="middle" fill="#2c3e50" font-family="Arial" font-size="14" font-weight="bold">Climate-Controlled Warehouse</text>
+</svg>

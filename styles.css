@@ -1,0 +1,489 @@
+/* Nippon Chemi-Con Website Styles */
+/* Global Styles and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #003DA5;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+.contact-link {
+    color: #003DA5;
+    text-decoration: none;
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    background: linear-gradient(rgba(0, 61, 165, 0.8), rgba(0, 61, 165, 0.8)), url('images/hero-banner.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #FFC72C;
+    color: #003DA5;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e6b429;
+}
+
+/* Core Advantages Styles */
+.core-advantages {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.core-advantages h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #2C3E50;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-10px);
+}
+
+.advantage-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003DA5;
+}
+
+.advantage-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2C3E50;
+}
+
+.advantage-card p {
+    color: #7f8c8d;
+}
+
+/* Product Areas Styles */
+.product-areas {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.product-areas h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #2C3E50;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-category {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 30px;
+    text-decoration: none;
+    color: #2C3E50;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.product-category:hover {
+    background: #003DA5;
+    color: white;
+    border-color: #003DA5;
+}
+
+.product-category .category-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #003DA5;
+}
+
+.product-category:hover .category-icon {
+    color: #FFC72C;
+}
+
+.product-category-large .category-icon-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-category-large:hover .category-icon-img {
+    transform: scale(1.1);
+}
+
+.product-category h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.product-category p {
+    color: #7f8c8d;
+}
+
+.product-category:hover h3, 
+.product-category:hover p {
+    color: white;
+}
+
+/* Solutions Preview Styles */
+.solutions-preview {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.solutions-preview h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #2C3E50;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    text-decoration: none;
+    color: #2C3E50;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.solution-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+}
+
+.solution-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #003DA5;
+}
+
+.solution-card p {
+    color: #7f8c8d;
+}
+
+/* Latest News Styles */
+.latest-news {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.latest-news h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #2C3E50;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 25px;
+    text-decoration: none;
+    color: #2C3E50;
+    transition: all 0.3s;
+}
+
+.news-card:hover {
+    background: #003DA5;
+    color: white;
+}
+
+.news-card:hover h3 {
+    color: #FFC72C;
+}
+
+.news-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.news-card .date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.news-card:hover .date {
+    color: #FFC72C;
+}
+
+/* Fixed Contact Bar */
+.fixed-contact-bar {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.contact-options {
+    display: flex;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.contact-btn.whatsapp {
+    background-color: #25D366;
+}
+
+.contact-btn.whatsapp:hover {
+    background-color: #128C7E;
+}
+
+.contact-btn.wechat {
+    background-color: #07C160;
+}
+
+.contact-btn.wechat:hover {
+    background-color: #069D4F;
+}
+
+.contact-btn.contact {
+    background-color: #003DA5;
+}
+
+.contact-btn.contact:hover {
+    background-color: #002A7A;
+}
+
+/* Footer Styles */
+footer {
+    background: #2C3E50;
+    color: white;
+    padding: 60px 20px 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.footer-section h4 {
+    color: #FFC72C;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #FFC72C;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .core-advantages, .product-areas, .solutions-preview, .latest-news {
+        padding: 50px 20px;
+    }
+    
+    .fixed-contact-bar {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .contact-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .advantages-grid, .products-grid, .solutions-grid, .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-options {
+        flex-direction: column;
+    }
+}

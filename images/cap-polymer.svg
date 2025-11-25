@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Polymer Capacitor -->
+  <rect x="60" y="80" width="80" height="40" rx="5" fill="#003DA5" />
+  <rect x="55" y="90" width="5" height="20" fill="#FFC72C" />
+  <rect x="140" y="90" width="5" height="20" fill="#FFC72C" />
+  <text x="100" y="170" text-anchor="middle" fill="#2C3E50" font-family="Arial" font-size="14">Polymer</text>
+</svg>
