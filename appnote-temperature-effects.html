@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Effects on Capacitor Performance - Application Notes - NCC Distributor | LiTong</title>
-    <meta name="description" content="Impact of temperature on Nippon Chemi-Con (NCC) capacitor performance. Understand how temperature affects electrical parameters and reliability of aluminum electrolytic capacitors.">
-    <meta name="keywords" content="NCC temperature effects, capacitor thermal performance, temperature derating, electrolytic capacitor temperature, NCC thermal characteristics">
+    <meta name="description" content="How temperature influences NCC capacitor parameters, lifetime, and reliability in different application environments. Temperature management best practices for optimal performance.">
+    <meta name="keywords" content="NCC temperature effects, capacitor thermal management, temperature derating, electrolytic temperature performance">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,8 +20,8 @@
             "@type": "Organization",
             "name": "LiTong Group FAE Team"
         },
-        "datePublished": "2024-10-15",
-        "dateModified": "2024-10-15",
+        "datePublished": "2024-10-15T00:00:00+00:00",
+        "dateModified": "2024-10-15T00:00:00+00:00",
         "publisher": {
             "@type": "Organization",
             "name": "LiTong Group",
@@ -30,7 +30,7 @@
                 "url": "https://chemi-con.elec-distributor.com/images/logo.svg"
             }
         },
-        "description": "How temperature impacts NCC capacitor parameters and reliability in various applications",
+        "description": "How temperature impacts capacitor parameters, lifetime, and reliability in different application environments.",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://chemi-con.elec-distributor.com/appnote-temperature-effects.html"
@@ -70,195 +70,297 @@
         </div>
     </section>
 
-    <!-- Article Overview -->
-    <section class="article-overview">
+    <!-- Modern Breadcrumbs -->
+    <section class="modern-breadcrumbs">
         <div class="container">
-            <h1>Temperature Effects on Capacitor Performance</h1>
-            <div class="article-meta">
-                <span class="article-date">Published: October 15, 2024</span>
-                <span class="article-author">by LiTong FAE Team</span>
-                <span class="article-readtime">Reading time: 10 minutes</span>
+            <a href="index.html" class="modern-breadcrumb-link">Home</a>
+            <span class="modern-breadcrumb-separator">›</span>
+            <a href="support.html" class="modern-breadcrumb-link">Technical Support</a>
+            <span class="modern-breadcrumb-separator">›</span>
+            <a href="support-appnotes.html" class="modern-breadcrumb-link">Application Notes</a>
+            <span class="modern-breadcrumb-separator">›</span>
+            <span>Temperature Effects</span>
+        </div>
+    </section>
+
+    <!-- Article Overview -->
+    <section class="modern-section">
+        <div class="modern-detail-layout">
+            <div class="modern-main-content">
+                <div class="modern-card">
+                    <div class="modern-section-header">
+                        <h1 class="modern-section-title">Temperature Effects on Capacitor Performance</h1>
+                        <p class="modern-section-subtitle">How temperature impacts NCC capacitor parameters, lifetime, and reliability in various application environments. Learn about temperature management best practices for optimal performance and longevity.</p>
+                    </div>
+                    
+                    <div class="article-meta">
+                        <span class="article-date">Published: October 15, 2024</span>
+                        <span class="article-author">by LiTong FAE Team</span>
+                        <span class="article-readtime">Reading time: 10 minutes</span>
+                    </div>
+                    
+                    <div class="article-tags">
+                        <span class="tag">Temperature</span>
+                        <span class="tag">Reliability</span>
+                        <span class="tag">Thermal Management</span>
+                    </div>
+                </div>
+
+                <div class="modern-card">
+                    <h2>Introduction to Temperature Effects</h2>
+                    <p>Temperature is one of the most critical factors affecting the performance and longevity of aluminum electrolytic capacitors. NCC capacitors are designed to operate reliably across a wide temperature range (typically -40°C to +105°C), but understanding the effects of temperature on various parameters is crucial for optimal application design.</p>
+
+                    <p>Temperature impacts multiple aspects of capacitor performance including electrical parameters, operational life, and physical characteristics. The relationship between temperature and performance follows predictable patterns, allowing for proper derating and design optimization.</p>
+                </div>
+
+                <div class="modern-card">
+                    <h2>Temperature Impact on Electrical Parameters</h2>
+                    
+                    <h3>Capacitance</h3>
+                    <p>Aluminum electrolytic capacitors typically exhibit a negative temperature coefficient of capacitance. At low temperatures (below 0°C), the effective capacitance may decrease by 10-20% from the rated value. At high temperatures, the capacitance tends to remain stable or slightly increase.</p>
+                    
+                    <div class="modern-grid">
+                        <div class="modern-feature-card">
+                            <h3 class="modern-feature-title">Low Temperature Effects</h3>
+                            <p>At temperatures below -20°C, electrolyte conductivity decreases significantly, potentially causing temporary loss of capacitance value. However, this effect is reversible upon warming.</p>
+                        </div>
+                        <div class="modern-feature-card">
+                            <h3 class="modern-feature-title">High Temperature Effects</h3>
+                            <p>At elevated temperatures, electrolyte conductivity improves, but the dielectric may begin to degrade, leading to gradual performance changes over time.</p>
+                        </div>
+                    </div>
+
+                    <h3>Equivalent Series Resistance (ESR)</h3>
+                    <p>ESR shows a strong temperature dependence, decreasing significantly at higher temperatures due to improved electrolyte conductivity. However, at very high temperatures, ESR may begin to increase due to degradation of electrolyte properties.</p>
+                    
+                    <div class="figure-container">
+                        <img src="images/temperature-esr-graph.svg" alt="Temperature vs ESR Graph" style="width: 100%; max-width: 600px; margin: 20px auto; display: block;">
+                        <p class="figure-caption">Figure 1: ESR vs Temperature Characteristic for NCC Capacitors</p>
+                    </div>
+
+                    <h3>Dissipation Factor (tan δ)</h3>
+                    <p>Dissipation factor generally follows a similar pattern to ESR, with values decreasing at elevated temperatures during normal operation but potentially increasing due to material degradation at extreme temperatures.</p>
+
+                    <h3>Leakage Current</h3>
+                    <p>Leakage current increases exponentially with temperature, following an Arrhenius relationship. Higher temperatures accelerate ionic movement, resulting in increased leakage currents.</p>
+                </div>
+
+                <div class="modern-card">
+                    <h2>Temperature and Operational Life</h2>
+                    <p>The most significant temperature effect is on operational life. According to the Arrhenius equation, operational life approximately halves for every 10°C increase in operating temperature above the rated temperature.</p>
+
+                    <h3>Life Prediction Formula</h3>
+                    <p>The temperature acceleration factor can be calculated as:</p>
+                    <div class="formula-box">
+                        <p>AF_temp = 2^[{(T_rated - T_actual)/10}]</p>
+                    </div>
+                    <p>Where T_rated is the rated temperature (typically +105°C) and T_actual is the actual operating temperature.</p>
+
+                    <div class="table-container">
+                        <table class="modern-table">
+                            <thead>
+                                <tr>
+                                    <th>Operating Temperature (°C)</th>
+                                    <th>Temperature Acceleration Factor</th>
+                                    <th>Actual Life (for 8000h rated cap)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>+105°C (rated)</td>
+                                    <td>1.0</td>
+                                    <td>8,000 hours</td>
+                                </tr>
+                                <tr>
+                                    <td>+95°C</td>
+                                    <td>2.0</td>
+                                    <td>16,000 hours</td>
+                                </tr>
+                                <tr>
+                                    <td>+85°C</td>
+                                    <td>4.0</td>
+                                    <td>32,000 hours</td>
+                                </tr>
+                                <tr>
+                                    <td>+75°C</td>
+                                    <td>8.0</td>
+                                    <td>64,000 hours</td>
+                                </tr>
+                                <tr>
+                                    <td>+65°C</td>
+                                    <td>16.0</td>
+                                    <td>128,000 hours</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Self-Heating Effects</h3>
+                    <p>In addition to ambient temperature, internal heating from ripple current further affects operational life:</p>
+                    <div class="formula-box">
+                        <p>T_effective = T_ambient + T_self_heating</p>
+                    </div>
+                    <p>Where:</p>
+                    <div class="formula-box">
+                        <p>T_self_heating ∝ I_rms² × ESR</p>
+                    </div>
+                </div>
+
+                <div class="modern-card">
+                    <h2>Temperature Effects by NCC Series</h2>
+                    <p>Different NCC series have varying temperature performance characteristics:</p>
+
+                    <div class="modern-accordion">
+                        <div class="modern-accordion-item">
+                            <div class="modern-accordion-header">
+                                <h3>KZE Series Temperature Performance</h3>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="modern-accordion-content">
+                                <p>Standard series with good temperature performance for general applications. Rated life of 2,000-8,000 hours at +105°C. Performs reliably in moderate temperature applications with appropriate derating.</p>
+                                <ul>
+                                    <li>Temperature range: -40°C to +105°C</li>
+                                    <li>Stable performance up to rated temperature</li>
+                                    <li>Cost-effective solution for standard applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modern-accordion-item">
+                            <div class="modern-accordion-header">
+                                <h3>KY Series Temperature Performance</h3>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="modern-accordion-content">
+                                <p>Enhanced series with superior high-temperature performance for demanding applications. Rated life of 8,000-10,000 hours at +105°C.</p>
+                                <ul>
+                                    <li>Temperature range: -40°C to +105°C</li>
+                                    <li>Superior ripple current handling with elevated temperature operation</li>
+                                    <li>Optimized electrolyte formulation for extended high-temperature life</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modern-accordion-item">
+                            <div class="modern-accordion-header">
+                                <h3>KMG Series Temperature Characteristics</h3>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="modern-accordion-content">
+                                <p>Miniature series with optimized temperature performance in compact form factor. Rated life of 2,000-8,000 hours at +105°C.</p>
+                                <ul>
+                                    <li>Temperature range: -40°C to +105°C</li>
+                                    <li>Consider thermal management due to compact size</li>
+                                    <li>Ideal for space-constrained applications with modest thermal requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modern-accordion-item">
+                            <div class="modern-accordion-header">
+                                <h3>Polymer Series Temperature Performance</h3>
+                                <span class="accordion-toggle">+</span>
+                            </div>
+                            <div class="modern-accordion-content">
+                                <p>Advanced solid capacitors with enhanced temperature stability and ultra-low ESR. Extended temperature range and excellent thermal stability.</p>
+                                <ul>
+                                    <li>Temperature range: -55°C to +105°C or higher</li>
+                                    <li>Minimal parameter variation over temperature range</li>
+                                    <li>Superior performance in high-frequency applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modern-card">
+                    <h2>Thermal Management Best Practices</h2>
+                    <p>Optimal thermal management is essential for maximizing both performance and operational life:</p>
+
+                    <h3>Heat Source Separation</h3>
+                    <p>Position capacitors away from high-power components, switching nodes, and other significant heat sources. A minimum distance of 10mm is recommended between capacitors and heat-generating components.</p>
+
+                    <h3>PCB Thermal Design</h3>
+                    <p>For SMD capacitors, use thermal vias and copper planes to dissipate heat. For through-hole capacitors, ensure adequate spacing to allow convective cooling. Consider using thicker copper (2oz or more) under high-power capacitors.</p>
+
+                    <h3>Airflow and Ventilation</h3>
+                    <p>Provide adequate ventilation in enclosed systems, especially when operating near maximum temperature ratings. Consider forced cooling for high-power applications.</p>
+
+                    <h3>Mounting Orientation</h3>
+                    <p>Vertical mounting can sometimes improve airflow around radial lead capacitors, but ensure adequate clearance for thermal expansion and proper cooling.</p>
+                </div>
+
+                <div class="modern-card">
+                    <h2>Temperature Testing and Validation</h2>
+                    <p>For critical applications, validate performance under worst-case temperature conditions:</p>
+
+                    <ul>
+                        <li>Perform validation tests at maximum and minimum operating temperatures</li>
+                        <li>Measure actual capacitor temperatures under full load conditions</li>
+                        <li>Verify performance parameters at temperature extremes</li>
+                        <li>Perform accelerated life testing to validate longevity expectations</li>
+                    </ul>
+
+                    <p class="fae-note">FAE Note: For applications with elevated ambient temperatures (>85°C), consider using NCC series with extended life ratings (8,000-10,000 hours) and implement aggressive thermal management strategies. The KY series is particularly suitable for such applications.</p>
+                </div>
             </div>
             
-            <p class="page-description">Understanding how temperature impacts Nippon Chemi-Con (NCC) capacitor parameters, performance characteristics, and operational life. This guide explores the thermal behavior of electrolytic capacitors and provides guidance for thermal management in your applications.</p>
-
-            <div class="article-tags">
-                <span class="tag">Thermal Management</span>
-                <span class="tag">Temperature Effects</span>
-                <span class="tag">Reliability</span>
-                <span class="tag">Derating</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Article Content -->
-    <section class="article-content">
-        <div class="container">
-            <div class="article-body">
-                <h2>Understanding Temperature Impact on Capacitors</h2>
-                <p>Temperature is one of the most critical factors affecting the performance and longevity of aluminum electrolytic capacitors. NCC capacitors are designed to operate reliably over a wide temperature range (typically -40°C to +105°C), but understanding the effects of temperature on various parameters is crucial for optimal application design.</p>
-
-                <h2>Primary Temperature Effects</h2>
-                <p>Temperature affects several key parameters of aluminum electrolytic capacitors:</p>
+            <div class="modern-sidebar">
+                <div class="modern-card">
+                    <h3>Topics Covered</h3>
+                    <ul>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#electrical-parameters">Electrical Parameter Effects</a></li>
+                        <li><a href="#operational-life">Life Impact</a></li>
+                        <li><a href="#by-series">Series Comparisons</a></li>
+                        <li><a href="#best-practices">Thermal Management</a></li>
+                        <li><a href="#testing">Testing Guidelines</a></li>
+                    </ul>
+                </div>
                 
-                <h3>1. Capacitance Value</h3>
-                <p>Aluminum electrolytic capacitors typically exhibit a negative temperature coefficient of capacitance. At low temperatures (below 0°C), the effective capacitance may decrease by 10-20%. At high temperatures, the capacitance tends to remain stable or slightly increase.</p>
+                <div class="modern-card">
+                    <h3>Technical Resources</h3>
+                    <ul>
+                        <li><a href="#">Temperature Derating Curves</a></li>
+                        <li><a href="#">Thermal Modeling Guidelines</a></li>
+                        <li><a href="#">PCB Layout Recommendations</a></li>
+                    </ul>
+                </div>
                 
-                <h3>2. Equivalent Series Resistance (ESR)</h3>
-                <p>ESR shows a strong temperature dependence, decreasing significantly at higher temperatures due to increased electrolyte conductivity. However, at very high temperatures, the ESR may begin to increase due to changes in electrolyte composition.</p>
+                <div class="modern-card">
+                    <h3>Related Articles</h3>
+                    <ul>
+                        <li><a href="appnote-life-calculation.html">Life Calculation Methods</a></li>
+                        <li><a href="appnote-select-capacitor-ripple-current.html">Ripple Current Selection</a></li>
+                        <li><a href="support-failure.html">Failure Analysis</a></li>
+                    </ul>
+                </div>
                 
-                <h3>3. Dissipation Factor (tan δ)</h3>
-                <p>Similar to ESR, dissipation factor decreases with rising temperature but increases at very high temperatures when electrolyte properties deteriorate.</p>
-                
-                <h3>4. Leakage Current</h3>
-                <p>Leakage current increases exponentially with temperature, following the Arrhenius relationship. Higher temperatures accelerate ionic movement, increasing leakage.</p>
-                
-                <h3>5. Operational Life</h3>
-                <p>The most significant temperature effect is on operational life. As mentioned in our life calculation guide, operational life approximately doubles for every 10°C decrease in operating temperature.</p>
-
-                <h2>NCC Series Temperature Characteristics</h2>
-                <p>Each NCC series has specific temperature performance characteristics:</p>
-
-                <table class="spec-table">
-                    <thead>
-                        <tr>
-                            <th>Series</th>
-                            <th>Operating Temperature</th>
-                            <th>Capacitance Tolerance</th>
-                            <th>Life @ +105°C</th>
-                            <th>Special Features</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>KZE Series</td>
-                            <td>-40°C to +105°C</td>
-                            <td>±20%</td>
-                            <td>2,000-8,000h</td>
-                            <td>General purpose, excellent cost-performance</td>
-                        </tr>
-                        <tr>
-                            <td>KY Series</td>
-                            <td>-40°C to +105°C</td>
-                            <td>±20%</td>
-                            <td>8,000-10,000h</td>
-                            <td>High ripple, extended life</td>
-                        </tr>
-                        <tr>
-                            <td>KMG Series</td>
-                            <td>-40°C to +105°C</td>
-                            <td>±20%</td>
-                            <td>2,000-8,000h</td>
-                            <td>Miniature profile</td>
-                        </tr>
-                        <tr>
-                            <td>Snap-in (KMQ)</td>
-                            <td>-40°C to +105°C</td>
-                            <td>±20%</td>
-                            <td>8,000-10,000h</td>
-                            <td>High capacitance, high ripple</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h2>Thermal Management Best Practices</h2>
-                <h3>1. Heat Source Separation</h3>
-                <p>Position capacitors away from high-power components, switching nodes, and other significant heat sources. A minimum distance of 10mm is recommended between capacitors and heat-generating components.</p>
-                
-                <h3>2. Ventilation and Airflow</h3>
-                <p>Provide adequate ventilation in enclosed systems, especially when operating near maximum temperature ratings. Consider forced cooling for high-power applications.</p>
-                
-                <h3>3. PCB Thermal Design</h3>
-                <p>Use thermal vias and copper planes to dissipate heat from SMD capacitors. For high-power applications, consider using thicker copper layers (2oz or more) under capacitors.</p>
-                
-                <h3>4. Heat Sinks</h3>
-                <p>For high-power applications with screw-terminal capacitors, ensure proper heat sinking to maintain case temperatures within the rated range.</p>
-
-                <h2>Low Temperature Operation</h2>
-                <p>At low temperatures:</p>
-                <ul>
-                    <li>ESR increases significantly, potentially causing performance issues in switching applications</li>
-                    <li>Capacitance may decrease in some conditions</li>
-                    <li>Start-up inrush current may increase due to higher ESR</li>
-                    <li>Allow for warm-up periods in critical applications</li>
-                </ul>
-
-                <p>For applications in cold environments, verify performance at the minimum operating temperature, especially for applications sensitive to ESR changes.</p>
-
-                <h2>Thermal Cycling Effects</h2>
-                <p>Repeated temperature cycling can cause mechanical stress on the internal construction, potentially leading to:</p>
-                <ul>
-                    <li>Increase in ESR over time</li>
-                    <li>Reduction in capacitance value</li>
-                    <li>Seal degradation accelerating electrolyte loss</li>
-                </ul>
-
-                <p>NCC capacitors are designed to withstand thermal cycling, but for applications with severe cycling requirements (large ΔT or frequent cycles), consider selecting series with enhanced cycling capabilities.</p>
-
-                <h2>Derating Guidelines</h2>
-                <p>To ensure reliable operation across the full temperature range:</p>
-                
-                <h3>Voltage Derating</h3>
-                <p>Consider voltage derating at high temperatures to compensate for potential changes in dielectric properties and improve long-term reliability.</p>
-                
-                <h3>Current Derating</h3>
-                <p>At elevated temperatures, reduce the allowed ripple current to account for the reduced dissipation capability of the capacitor.</p>
-
-                <p class="fae-note">FAE Note: For applications with elevated ambient temperatures (>85°C), consider using NCC series with extended life ratings (8,000-10,000 hours) and implement aggressive thermal management strategies. The KY series is particularly suitable for such applications.</p>
-
-                <h2>Testing and Validation</h2>
-                <p>For critical applications, validate performance under worst-case temperature conditions:</p>
-                <ul>
-                    <li>Verify circuit performance at maximum and minimum operating temperatures</li>
-                    <li>Measure actual component temperatures under full load conditions</li>
-                    <li>Perform thermal imaging to identify hot spots</li>
-                    <li>Validate ESR and capacitance values at operating temperatures</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Resources -->
-    <section class="related-resources">
-        <div class="container">
-            <h2>Related Resources</h2>
-            <div class="resources-grid">
-                <a href="appnote-life-calculation.html" class="resource-card">
-                    <h3>Capacitor Life Calculation and Prediction</h3>
-                    <p class="resource-meta">Application Note • 18 min read</p>
-                    <p>Methods to predict and enhance the operational life of NCC capacitors under various conditions.</p>
-                </a>
-                <a href="appnote-select-capacitor-ripple-current.html" class="resource-card">
-                    <h3>How to Select Capacitors Based on Ripple Current</h3>
-                    <p class="resource-meta">Application Note • 15 min read</p>
-                    <p>Learn how temperature affects ripple current handling capabilities.</p>
-                </a>
-                <a href="support-appnotes.html" class="resource-card">
-                    <h3>All Application Notes</h3>
-                    <p class="resource-meta">Technical Resources</p>
-                    <p>Explore our complete collection of technical application documents.</p>
-                </a>
+                <div class="modern-card">
+                    <h3>Need Thermal Design Help?</h3>
+                    <p>Get expert guidance on thermal management for your specific application</p>
+                    <a href="contact.html" class="modern-btn modern-btn-primary">Contact Thermal Experts</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Related Products -->
-    <section class="related-products">
+    <section class="modern-section">
         <div class="container">
-            <h2>Temperature-Robust Products</h2>
-            <div class="products-grid">
-                <a href="product-ky.html" class="product-related">
-                    <h3>KY Series</h3>
-                    <p>Extended life with superior performance at high temperatures.</p>
-                </a>
-                <a href="product-kmq.html" class="product-related">
-                    <h3>KMQ Series</h3>
-                    <p>High ripple capability with robust thermal performance.</p>
-                </a>
-                <a href="products-polymer.html" class="product-related">
-                    <h3>Polymer Capacitors</h3>
-                    <p>For applications requiring superior thermal stability and low ESR.</p>
-                </a>
+            <div class="modern-card">
+                <h2 class="modern-section-title">Temperature-Optimized Products</h2>
+                <div class="modern-grid">
+                    <a href="product-ky.html" class="product-related">
+                        <h3>KY Series</h3>
+                        <p>Enhanced temperature performance and extended life for high-temperature applications.</p>
+                    </a>
+                    <a href="products-polymer.html" class="product-related">
+                        <h3>Polymer Series</h3>
+                        <p>Superior temperature stability and minimal parameter variation across temperature range.</p>
+                    </a>
+                    <a href="support-selection.html" class="product-related">
+                        <h3>Selection Guide</h3>
+                        <p>Comprehensive guide for selecting capacitors based on temperature requirements.</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -266,10 +368,15 @@
     <!-- Call to Action -->
     <section class="cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>Need Thermal Design Guidance?</h2>
-                <p>Our FAE engineers can provide specific thermal management recommendations for your application</p>
-                <a href="contact.html" class="btn-primary">Contact Thermal Management Experts</a>
+            <div class="modern-card">
+                <div class="cta-content">
+                    <h2>Need Temperature Analysis for Your Design?</h2>
+                    <p>Our FAE engineers can provide detailed thermal analysis and component recommendations for your specific application</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="modern-btn modern-btn-primary">Request Thermal Analysis</a>
+                        <a href="contact.html" class="modern-btn modern-btn-secondary">Download Thermal Guide</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
