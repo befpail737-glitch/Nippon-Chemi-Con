@@ -68,6 +68,123 @@ body {
     padding: 0 var(--spacing-md);
 }
 
+/* Enhanced layout for detail pages with better space utilization */
+.detail-page-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content, sidebar */
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.detail-main-content {
+    grid-column: 1;
+}
+
+.sidebar-content {
+    grid-column: 2;
+    background: var(--card-bg);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-lg);
+    align-self: start;
+    position: sticky;
+    top: 20px;
+}
+
+/* Responsive adjustments for detail page layout */
+@media (max-width: 1024px) {
+    .detail-page-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .sidebar-content {
+        grid-column: 1;
+        position: static;
+    }
+}
+
+/* Full width sections for better visual balance */
+.full-width-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50%;
+    margin-right: -50%;
+    padding: var(--spacing-3xl) var(--spacing-md);
+}
+
+.full-width-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Backwards compatibility for existing layout classes */
+.detail-page-layout,
+.product-detail-overview .container,
+.solution-overview .container,
+.support-overview .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Improved content balance for detail pages */
+.content-with-sidebar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-2xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.main-content-area {
+    grid-column: 1;
+}
+
+.secondary-content-area {
+    grid-column: 2;
+    background: var(--card-bg);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-lg);
+    align-self: start;
+    position: sticky;
+    top: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-with-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .secondary-content-area {
+        grid-column: 1;
+        position: static;
+    }
+}
+
+/* Balance content sections */
+.balanced-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.content-card-balanced {
+    background: var(--card-bg);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-light);
+}
+
 .grid-12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -2182,4 +2299,237 @@ footer {
 
 .search-btn:hover {
     background: #0059a3;
+}
+
+/* Additional layout classes for improved visual balance */
+.detail-page-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Main content, sidebar */
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.detail-main-content {
+    grid-column: 1;
+}
+
+.sidebar-content {
+    grid-column: 2;
+    background: var(--card-bg);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-lg);
+    align-self: start;
+    position: sticky;
+    top: 20px;
+}
+
+/* Responsive adjustments for detail page layout */
+@media (max-width: 1024px) {
+    .detail-page-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .sidebar-content {
+        grid-column: 1;
+        position: static;
+    }
+}
+
+/* Table container styles for better visual presentation */
+.table-container {
+    overflow-x: auto;
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--border-radius-element);
+    box-shadow: var(--shadow-light);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.table-container th,
+.table-container td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table-container th {
+    background-color: var(--background-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.table-container tr:last-child td {
+    border-bottom: none;
+}
+
+.table-container tr:hover {
+    background-color: var(--hover-color);
+}
+
+/* Applications grid for balanced content layout */
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.application-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-element);
+    padding: var(--spacing-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.application-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+/* Characteristics grid for more balanced information display */
+.characteristics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.characteristic-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-element);
+    padding: var(--spacing-lg);
+    transition: all 0.3s ease;
+}
+
+.characteristic-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-medium);
+}
+
+.characteristic-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Improved call-to-action sections */
+.cta-section {
+    padding: var(--spacing-3xl) var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a4a8a 100%);
+    color: var(--white);
+    text-align: center;
+    margin: var(--spacing-3xl) 0;
+}
+
+.cta-content h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+}
+
+.cta-content p {
+    font-size: var(--font-size-lg);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Highlight cards for important features */
+.highlight-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.highlight-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+}
+
+.highlight-card p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Product related cards for better cross-selling */
+.product-related {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-xl);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.product-related:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-heavy);
+    transform: translateY(-3px);
+}
+
+.product-related h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+.product-related p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin: var(--spacing-xl) 0;
 }
