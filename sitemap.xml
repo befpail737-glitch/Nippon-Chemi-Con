@@ -138,4 +138,40 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://chemi-con.elec-distributor.com/product-kze.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://chemi-con.elec-distributor.com/product-ky.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://chemi-con.elec-distributor.com/product-kmg.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://chemi-con.elec-distributor.com/product-mva.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://chemi-con.elec-distributor.com/appnote-select-capacitor-ripple-current.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://chemi-con.elec-distributor.com/news-ncc-announces-new-high-temp-series.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>

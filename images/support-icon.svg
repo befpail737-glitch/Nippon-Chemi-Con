@@ -1,0 +1,9 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="none"/>
+  <g fill="none" stroke="#003DA5" stroke-width="2">
+    <!-- Gear shape -->
+    <circle cx="24" cy="24" r="10"/>
+    <path d="M24 14 L24 16 M24 32 L24 34 M14 24 L16 24 M32 24 L34 24 M18.5 18.5 L19.9 19.9 M28.1 28.1 L29.5 29.5 M18.5 29.5 L19.9 28.1 M28.1 19.9 L29.5 18.5"/>
+    <path d="M20 14 L28 14 L30 16 L30 20 L34 20 L34 28 L30 28 L30 32 L28 34 L20 34 L18 32 L18 28 L14 28 L14 20 L18 20 L18 16 L20 14 Z"/>
+  </g>
+</svg>

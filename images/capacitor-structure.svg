@@ -1,0 +1,34 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="16" text-anchor="middle" fill="#003DA5">NCC Capacitor Internal Structure</text>
+  
+  <!-- Capacitor body -->
+  <ellipse cx="300" cy="200" rx="120" ry="180" fill="#E6F2FF" stroke="#003DA5" stroke-width="2"/>
+  
+  <!-- Internal layers -->
+  <ellipse cx="300" cy="200" rx="100" ry="160" fill="#F0F8FF" stroke="#003DA5" stroke-width="1"/>
+  <ellipse cx="300" cy="200" rx="80" ry="140" fill="#F8F8FF" stroke="#003DA5" stroke-width="1"/>
+  
+  <!-- Electrode layers -->
+  <path d="M200,80 Q300,100 400,80 Q300,120 200,100 Z" fill="#FFC72C" stroke="#FFC72C" stroke-width="1"/>
+  <path d="M200,320 Q300,300 400,320 Q300,280 200,300 Z" fill="#FFC72C" stroke="#FFC72C" stroke-width="1"/>
+  
+  <!-- Dielectric layer -->
+  <ellipse cx="300" cy="200" rx="90" ry="150" fill="none" stroke="#8E44AD" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Terminals -->
+  <rect x="290" y="40" width="20" height="10" fill="#8B4513"/>
+  <rect x="290" y="350" width="20" height="10" fill="#8B4513"/>
+  
+  <!-- Labels -->
+  <text x="300" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#003DA5">Dielectric</text>
+  <text x="300" y="100" font-family="Arial" font-size="12" text-anchor="middle" fill="#FF8C00">Anode (+)</text>
+  <text x="300" y="310" font-family="Arial" font-size="12" text-anchor="middle" fill="#FF8C00">Cathode (-)</text>
+  <text x="300" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#8E44AD">Aluminum Electrolytic</text>
+  
+  <!-- NCC Logo -->
+  <text x="300" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#003DA5">NCC</text>
+</svg>
