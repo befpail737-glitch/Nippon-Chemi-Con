@@ -72,254 +72,340 @@
         </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <section class="breadcrumb">
+    <!-- Modern Breadcrumbs -->
+    <section class="modern-breadcrumbs">
         <div class="container">
-            <p><a href="index.html">Home</a> > Contact Us</p>
+            <a href="index.html" class="modern-breadcrumb-link">Home</a>
+            <span class="modern-breadcrumb-separator">›</span>
+            <span>Contact Us</span>
         </div>
     </section>
 
     <!-- Contact Overview -->
-    <section class="contact-overview">
-        <div class="container">
-            <h1>Contact LiTong Group</h1>
-            <p class="page-description">Reach out to our team for product inquiries, technical support, quotations, or any other assistance. Our global sales network ensures local support wherever you are.</p>
-            
-            <div class="contact-options">
-                <div class="contact-method">
-                    <h3>Quick Contact</h3>
-                    <p>WhatsApp: <a href="whatsapp://send?phone=8615013702378">+86 15013702378</a></p>
-                    <p>WeChat: +86 18612518271</p>
-                    <p>Email: <a href="mailto:info@elec-distributor.com">info@elec-distributor.com</a></p>
+    <section class="modern-section">
+        <div class="modern-detail-layout">
+            <div class="modern-main-content">
+                <div class="modern-card">
+                    <div class="modern-section-header">
+                        <h1 class="modern-section-title">Contact LiTong Group</h1>
+                        <p class="modern-section-subtitle">Our commitment to providing exceptional service and local support is reflected in our extensive global sales network. From our headquarters in Hong Kong to major economic centers across Asia, Europe, and the Americas, the LiTong Group team is strategically positioned to meet your needs. Find your nearest office below.</p>
+                    </div>
                 </div>
-                <div class="contact-method">
+
+                <div class="modern-card">
+                    <h2 class="modern-section-title">Quick Contact Options</h2>
+                    <div class="modern-grid">
+                        <div class="modern-feature-card">
+                            <div class="modern-feature-icon">💬</div>
+                            <h3 class="modern-feature-title">WhatsApp</h3>
+                            <p>+86 15013702378</p>
+                            <a href="whatsapp://send?phone=8615013702378" class="modern-btn modern-btn-primary">Send Message</a>
+                        </div>
+                        <div class="modern-feature-card">
+                            <div class="modern-feature-icon">💬</div>
+                            <h3 class="modern-feature-title">WeChat</h3>
+                            <p>+86 18612518271</p>
+                            <a href="#" class="modern-btn modern-btn-primary">Add Contact</a>
+                        </div>
+                        <div class="modern-feature-card">
+                            <div class="modern-feature-icon">✉️</div>
+                            <h3 class="modern-feature-title">Email</h3>
+                            <p>info@elec-distributor.com</p>
+                            <a href="mailto:info@elec-distributor.com" class="modern-btn modern-btn-primary">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="modern-card">
+                    <h2 class="modern-section-title">Send Us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="">Select Country</option>
+                                <option value="China">China</option>
+                                <option value="USA">United States</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Japan">Japan</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="India">India</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="Product Inquiry">Product Inquiry</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Quotation Request">Quotation Request</option>
+                                <option value="Sample Request">Sample Request</option>
+                                <option value="Application Question">Application Question</option>
+                                <option value="Genuine Authentication">Genuine Authentication</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please describe your requirements, questions, or specific part numbers you're interested in..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="modern-btn modern-btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modern-sidebar">
+                <div class="modern-card">
+                    <h3>Global Sales Network</h3>
+                    <ul class="contact-regions">
+                        <li><a href="#greater-china">Greater China</a></li>
+                        <li><a href="#americas">Americas</a></li>
+                        <li><a href="#europe">Europe</a></li>
+                        <li><a href="#asia-pacific">Asia-Pacific</a></li>
+                    </ul>
+                </div>
+
+                <div class="modern-card">
                     <h3>Technical Support</h3>
-                    <p>FAE Hotline: <a href="tel:+8615013702378">+86 15013702378</a></p>
-                    <p>Technical Email: <a href="mailto:technical@elec-distributor.com">technical@elec-distributor.com</a></p>
+                    <p>For technical questions and FAE support</p>
+                    <a href="tel:+8615013702378" class="modern-btn modern-btn-secondary">+86 15013702378</a>
+                    <a href="mailto:technical@elec-distributor.com" class="modern-btn modern-btn-secondary">technical@elec-distributor.com</a>
                 </div>
-                <div class="contact-method">
-                    <h3>Order Inquiries</h3>
-                    <p>Sales Hotline: <a href="tel:+8615013702378">+86 15013702378</a></p>
-                    <p>Sales Email: <a href="mailto:sales@elec-distributor.com">sales@elec-distributor.com</a></p>
+
+                <div class="modern-card">
+                    <h3>Sales Inquiries</h3>
+                    <p>For product orders and quotations</p>
+                    <a href="tel:+8615013702378" class="modern-btn modern-btn-secondary">+86 15013702378</a>
+                    <a href="mailto:sales@elec-distributor.com" class="modern-btn modern-btn-secondary">sales@elec-distributor.com</a>
+                </div>
+
+                <div class="modern-card">
+                    <h3>Office Hours</h3>
+                    <p>Global support across multiple time zones</p>
+                    <ul class="office-hours-list">
+                        <li>Asia-Pacific: 9:00 AM - 6:00 PM (Local Time)</li>
+                        <li>North America: 8:00 AM - 5:00 PM EST/PST</li>
+                        <li>Europe: 9:00 AM - 6:00 PM (CET)</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="contact-form-section">
+    <!-- Offices by Region -->
+    <section class="modern-section">
         <div class="container">
-            <h2>Send Us a Message</h2>
-            <form class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company *</label>
-                        <input type="text" id="company" name="company" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="">Select Country</option>
-                            <option value="China">China</option>
-                            <option value="USA">United States</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Japan">Japan</option>
-                            <option value="South Korea">South Korea</option>
-                            <option value="India">India</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select Subject</option>
-                            <option value="Product Inquiry">Product Inquiry</option>
-                            <option value="Technical Support">Technical Support</option>
-                            <option value="Quotation Request">Quotation Request</option>
-                            <option value="Sample Request">Sample Request</option>
-                            <option value="Application Question">Application Question</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Please describe your requirements, questions, or specific part numbers you're interested in..."></textarea>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group full-width">
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Global Sales Network -->
-    <section class="sales-network">
-        <div class="container">
-            <h2>Global Sales Network</h2>
-            <div class="network-tabs">
-                <button class="tab-button active" data-tab="asia">Asia-Pacific</button>
-                <button class="tab-button" data-tab="americas">Americas</button>
-                <button class="tab-button" data-tab="europe">Europe</button>
-            </div>
+            <h2 class="modern-section-title">Regional Offices</h2>
             
-            <div class="tab-content active" id="asia">
-                <div class="region-offices">
-                    <div class="office-card">
-                        <h3>Hong Kong Headquarters</h3>
-                        <p><strong>Address:</strong> 5/F, Green 18, 7 Science Park East Avenue, Hong Kong Science Park, Shatin, Hong Kong</p>
-                        <p><strong>Email:</strong> <a href="mailto:hk@elec-distributor.com">hk@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +852 1234 5678</p>
+            <div class="modern-accordion">
+                <!-- Greater China Section -->
+                <div class="modern-accordion-item">
+                    <div class="modern-accordion-header" id="greater-china">
+                        <h3>Greater China Network</h3>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div class="office-card">
-                        <h3>Beijing Office</h3>
-                        <p><strong>Address:</strong> Room 101-215, 2/F, Building 19, Yard 6, Hengye North 7th Street, Tongzhou District, Beijing</p>
-                        <p><strong>Email:</strong> <a href="mailto:bj@elec-distributor.com">bj@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +86 10 1234 5678</p>
-                    </div>
-                    <div class="office-card">
-                        <h3>Shanghai Office</h3>
-                        <p><strong>Address:</strong> Room 705-706, Baokuang Intercontinental Business Center, 100 Yutong Road, Shanghai</p>
-                        <p><strong>Email:</strong> <a href="mailto:sh@elec-distributor.com">sh@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +86 21 1234 5678</p>
-                    </div>
-                    <div class="office-card">
-                        <h3>Shenzhen Office</h3>
-                        <p><strong>Address:</strong> Room 306-308, Changping Business Building, 6 Honghua Road, Futian Free Trade Zone, Shenzhen</p>
-                        <p><strong>Email:</strong> <a href="mailto:sz@elec-distributor.com">sz@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +86 755 1234 5678</p>
-                    </div>
-                    <div class="office-card">
-                        <h3>Tokyo Office</h3>
-                        <p><strong>Address:</strong> Marunouchi Park Building, 2-6-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan</p>
-                        <p><strong>Email:</strong> <a href="mailto:tk@elec-distributor.com">tk@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +81 3-1234-5678</p>
-                    </div>
-                    <div class="office-card">
-                        <h3>Seoul Office</h3>
-                        <p><strong>Address:</strong> Gangnam Finance Center, 152 Teheran-ro, Gangnam-gu, Seoul, South Korea</p>
-                        <p><strong>Email:</strong> <a href="mailto:sl@elec-distributor.com">sl@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +82 2-1234-5678</p>
+                    <div class="modern-accordion-content">
+                        <div class="modern-grid">
+                            <div class="modern-card">
+                                <h3>Hong Kong Headquarters</h3>
+                                <p><strong>Address:</strong> 5/F, Green 18, 7 Science Park East Avenue, Hong Kong Science Park, Shatin, Hong Kong</p>
+                                <p><strong>Email:</strong> <a href="mailto:hk@elec-distributor.com">hk@elec-distributor.com</a></p>
+                                <p><strong>Phone:</strong> +852 1234 5678</p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Beijing Office</h3>
+                                <p><strong>Address:</strong> Room 101-215, 2/F, Building 19, Yard 6, Hengye North 7th Street, Tongzhou District, Beijing</p>
+                                <p><strong>Email:</strong> <a href="mailto:bj@elec-distributor.com">bj@elec-distributor.com</a></p>
+                                <p><strong>Phone:</strong> +86 10 1234 5678</p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Shanghai Office</h3>
+                                <p><strong>Address:</strong> Room 705-706, Baokuang Intercontinental Business Center, 100 Yutong Road, Shanghai</p>
+                                <p><strong>Email:</strong> <a href="mailto:sh@elec-distributor.com">sh@elec-distributor.com</a></p>
+                                <p><strong>Phone:</strong> +86 21 1234 5678</p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Shenzhen Office</h3>
+                                <p><strong>Address:</strong> Room 306-308, Changping Business Building, 6 Honghua Road, Futian Free Trade Zone, Shenzhen</p>
+                                <p><strong>Email:</strong> <a href="mailto:sz@elec-distributor.com">sz@elec-distributor.com</a></p>
+                                <p><strong>Phone:</strong> +86 755 1234 5678</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="tab-content" id="americas">
-                <div class="region-offices">
-                    <div class="office-card">
-                        <h3>Washington, D.C. Office</h3>
-                        <p><strong>Address:</strong> 1776 K St NW, Washington, D.C. 20006, USA</p>
-                        <p><strong>Email:</strong> <a href="mailto:us@elec-distributor.com">us@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +1 202-123-4567</p>
+
+                <!-- Americas Section -->
+                <div class="modern-accordion-item">
+                    <div class="modern-accordion-header" id="americas">
+                        <h3>Americas</h3>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div class="office-card">
-                        <h3>Mexico City Office</h3>
-                        <p><strong>Address:</strong> Torre Mayor, Av. P. de la Reforma 505, Cuauhtémoc, 06500 Ciudad de México, CDMX, Mexico</p>
-                        <p><strong>Email:</strong> <a href="mailto:mx@elec-distributor.com">mx@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +52 55 1234 5678</p>
+                    <div class="modern-accordion-content">
+                        <div class="modern-grid">
+                            <div class="modern-card">
+                                <h3>United States (USA)</h3>
+                                <p><strong>Address:</strong> 1776 K St NW, Washington, D.C. 20006, USA</p>
+                                <p><strong>Email:</strong> <a href="mailto:john.smith@elec-distributor.com">john.smith@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Mexico</h3>
+                                <p><strong>Address:</strong> Torre Mayor, Av. P. de la Reforma 505, Cuauhtémoc, 06500 Ciudad de México, CDMX, Mexico</p>
+                                <p><strong>Email:</strong> <a href="mailto:sofia.hernandez@elec-distributor.com">sofia.hernandez@elec-distributor.com</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="tab-content" id="europe">
-                <div class="region-offices">
-                    <div class="office-card">
-                        <h3>Berlin Office</h3>
-                        <p><strong>Address:</strong> Potsdamer Platz 1, 10785 Berlin, Germany</p>
-                        <p><strong>Email:</strong> <a href="mailto:de@elec-distributor.com">de@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +49 30 12345678</p>
+
+                <!-- Europe Section -->
+                <div class="modern-accordion-item">
+                    <div class="modern-accordion-header" id="europe">
+                        <h3>Europe</h3>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div class="office-card">
-                        <h3>Rome Office</h3>
-                        <p><strong>Address:</strong> Piazzale dell'Industria, 40, 00144 Roma RM, Italy</p>
-                        <p><strong>Email:</strong> <a href="mailto:it@elec-distributor.com">it@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +39 06 12345678</p>
+                    <div class="modern-accordion-content">
+                        <div class="modern-grid">
+                            <div class="modern-card">
+                                <h3>Germany</h3>
+                                <p><strong>Address:</strong> Potsdamer Platz 1, 10785 Berlin, Germany</p>
+                                <p><strong>Email:</strong> <a href="mailto:michael.muller@elec-distributor.com">michael.muller@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Italy</h3>
+                                <p><strong>Address:</strong> Piazzale dell'Industria, 40, 00144 Roma RM, Italy</p>
+                                <p><strong>Email:</strong> <a href="mailto:giulia.rossi@elec-distributor.com">giulia.rossi@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>United Kingdom (UK)</h3>
+                                <p><strong>Address:</strong> 20 Fenchurch St, London EC3M 3BY, United Kingdom</p>
+                                <p><strong>Email:</strong> <a href="mailto:emily.jones@elec-distributor.com">emily.jones@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Poland</h3>
+                                <p><strong>Address:</strong> Warsaw Financial Center, Emilii Plater 53, 00-113 Warszawa, Poland</p>
+                                <p><strong>Email:</strong> <a href="mailto:anna.kowalska@elec-distributor.com">anna.kowalska@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Slovakia</h3>
+                                <p><strong>Address:</strong> Twin City Tower, Mlynské nivy 10, 821 09 Bratislava, Slovakia</p>
+                                <p><strong>Email:</strong> <a href="mailto:peter.horvath@elec-distributor.com">peter.horvath@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Russia</h3>
+                                <p><strong>Address:</strong> Federation Tower, Presnenskaya nab., 12, Moscow, Russia, 123112</p>
+                                <p><strong>Email:</strong> <a href="mailto:ivan.petrov@elec-distributor.com">ivan.petrov@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Turkey</h3>
+                                <p><strong>Address:</strong> Söğütözü, Söğütözü Cd. No:2, Armada Tower, 06510 Çankaya/Ankara, Turkey</p>
+                                <p><strong>Email:</strong> <a href="mailto:elif.yilmaz@elec-distributor.com">elif.yilmaz@elec-distributor.com</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="office-card">
-                        <h3>London Office</h3>
-                        <p><strong>Address:</strong> 20 Fenchurch St, London EC3M 3BY, United Kingdom</p>
-                        <p><strong>Email:</strong> <a href="mailto:uk@elec-distributor.com">uk@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +44 20 1234 5678</p>
+                </div>
+
+                <!-- Asia-Pacific Section -->
+                <div class="modern-accordion-item">
+                    <div class="modern-accordion-header" id="asia-pacific">
+                        <h3>Asia-Pacific</h3>
+                        <span class="accordion-toggle">+</span>
                     </div>
-                    <div class="office-card">
-                        <h3>Warsaw Office</h3>
-                        <p><strong>Address:</strong> Warsaw Financial Center, Emilii Plater 53, 00-113 Warszawa, Poland</p>
-                        <p><strong>Email:</strong> <a href="mailto:pl@elec-distributor.com">pl@elec-distributor.com</a></p>
-                        <p><strong>Phone:</strong> +48 22 123 4567</p>
+                    <div class="modern-accordion-content">
+                        <div class="modern-grid">
+                            <div class="modern-card">
+                                <h3>Australia</h3>
+                                <p><strong>Address:</strong> Australia Square, Level 33, 264 George Street, Sydney NSW 2000, Australia</p>
+                                <p><strong>Email:</strong> <a href="mailto:liam.wilson@elec-distributor.com">liam.wilson@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Japan</h3>
+                                <p><strong>Address:</strong> Marunouchi Park Building, 2-6-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan</p>
+                                <p><strong>Email:</strong> <a href="mailto:ken.tanaka@elec-distributor.com">ken.tanaka@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>South Korea</h3>
+                                <p><strong>Address:</strong> Gangnam Finance Center, 152 Teheran-ro, Gangnam-gu, Seoul, South Korea</p>
+                                <p><strong>Email:</strong> <a href="mailto:seojoon.park@elec-distributor.com">seojoon.park@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>India</h3>
+                                <p><strong>Address:</strong> Worldmark 1, Aerocity, Indira Gandhi International Airport, New Delhi, Delhi 110037, India</p>
+                                <p><strong>Email:</strong> <a href="mailto:priya.sharma@elec-distributor.com">priya.sharma@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Vietnam</h3>
+                                <p><strong>Address:</strong> Lotte Center Hanoi, 54 Liễu Giai, Cống Vị, Ba Đình, Hà Nội, Vietnam</p>
+                                <p><strong>Email:</strong> <a href="mailto:an.nguyen@elec-distributor.com">an.nguyen@elec-distributor.com</a></p>
+                            </div>
+                            <div class="modern-card">
+                                <h3>Malaysia</h3>
+                                <p><strong>Address:</strong> Petronas Twin Tower 1, Kuala Lumpur City Centre, 50088 Kuala Lumpur, Malaysia</p>
+                                <p><strong>Email:</strong> <a href="mailto:siti.nurhaliza@elec-distributor.com">siti.nurhaliza@elec-distributor.com</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Office Hours -->
-    <section class="office-hours">
+    <!-- Response Times -->
+    <section class="modern-section">
         <div class="container">
-            <h2>Office Hours</h2>
-            <div class="hours-grid">
-                <div class="hours-card">
-                    <h3>Asia-Pacific</h3>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM (Local Time)</p>
-                    <p>Saturday: 9:00 AM - 1:00 PM (Select Offices)</p>
-                </div>
-                <div class="hours-card">
-                    <h3>North America</h3>
-                    <p>Monday - Friday: 8:00 AM - 5:00 PM EST/PST</p>
-                    <p>Closed on US federal holidays</p>
-                </div>
-                <div class="hours-card">
-                    <h3>Europe</h3>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM (CET)</p>
-                    <p>Closed on local public holidays</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Response Time -->
-    <section class="response-time">
-        <div class="container">
-            <div class="response-content">
-                <h2>Expected Response Times</h2>
-                <div class="response-grid">
-                    <div class="response-item">
-                        <h3>General Inquiries</h3>
+            <div class="modern-card">
+                <h2 class="modern-section-title">Expected Response Times</h2>
+                <div class="modern-grid">
+                    <div class="modern-feature-card">
+                        <h3 class="modern-feature-title">General Inquiries</h3>
                         <p>Within 24 hours</p>
                     </div>
-                    <div class="response-item">
-                        <h3>Technical Support</h3>
+                    <div class="modern-feature-card">
+                        <h3 class="modern-feature-title">Technical Support</h3>
                         <p>Within 12 hours</p>
                     </div>
-                    <div class="response-item">
-                        <h3>Quote Requests</h3>
+                    <div class="modern-feature-card">
+                        <h3 class="modern-feature-title">Quote Requests</h3>
                         <p>Within 48 hours</p>
                     </div>
-                    <div class="response-item">
-                        <h3>Sample Requests</h3>
+                    <div class="modern-feature-card">
+                        <h3 class="modern-feature-title">Sample Requests</h3>
                         <p>Within 72 hours</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="modern-card">
+                <h2 class="modern-section-title">Our Global Presence</h2>
+                <div class="map-placeholder">
+                    <p>Interactive world map showing our sales offices and distribution network</p>
+                    <p>Worldwide coverage with strategic positioning in key economic centers</p>
                 </div>
             </div>
         </div>
@@ -341,39 +427,32 @@
                 <div class="footer-section">
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="products.html">Radial Lead</a></li>
-                        <li><a href="products.html">SMD</a></li>
-                        <li><a href="products.html">Snap-in</a></li>
-                        <li><a href="products.html">Screw Terminal</a></li>
-                        <li><a href="products.html">Polymer/Hybrid</a></li>
+                        <li><a href="products-radial.html">Radial Lead</a></li>
+                        <li><a href="products-smd.html">SMD</a></li>
+                        <li><a href="products-snapin.html">Snap-in</a></li>
+                        <li><a href="products-screw.html">Screw Terminal</a></li>
+                        <li><a href="products-polymer.html">Polymer/Hybrid</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Solutions</h4>
                     <ul>
                         <li><a href="solution-smps.html">SMPS</a></li>
-                        <li><a href="solutions.html">PV Inverters</a></li>
-                        <li><a href="solutions.html">EV OBC</a></li>
-                        <li><a href="solutions.html">LED Drivers</a></li>
-                        <li><a href="solutions.html">Industrial</a></li>
+                        <li><a href="solution-pv.html">PV Inverters</a></li>
+                        <li><a href="solution-ev.html">EV OBC</a></li>
+                        <li><a href="solution-led.html">LED Drivers</a></li>
+                        <li><a href="solution-industrial.html">Industrial</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Support</h4>
                     <ul>
                         <li><a href="support-selection.html">Selection Guide</a></li>
-                        <li><a href="support.html">Application Notes</a></li>
-                        <li><a href="support.html">Failure Analysis</a></li>
-                        <li><a href="support.html">Genuine Authentication</a></li>
+                        <li><a href="support-appnotes.html">Application Notes</a></li>
+                        <li><a href="support-failure.html">Failure Analysis</a></li>
+                        <li><a href="support-authentication.html">Genuine Authentication</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>LiTong Group - Global Sales Network</p>
-                    <p>WhatsApp: +86 15013702378</p>
-                    <p>WeChat: +86 18612518271</p>
-                    <p>Email: info@elec-distributor.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -383,23 +462,23 @@
     </footer>
 
     <script>
-        // Simple tab functionality for sales network
-        document.querySelectorAll('.tab-button').forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons and content
-                document.querySelectorAll('.tab-button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
+        // Accordion functionality
+        document.querySelectorAll('.modern-accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isOpen = content.style.display === 'block';
+                
+                // Close all accordion items
+                document.querySelectorAll('.modern-accordion-content').forEach(item => {
+                    item.style.display = 'none';
                 });
                 
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                // Show corresponding content
-                const tabId = button.getAttribute('data-tab');
-                document.getElementById(tabId).classList.add('active');
+                // Toggle current item if was not open
+                if(!isOpen) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
             });
         });
     </script>
