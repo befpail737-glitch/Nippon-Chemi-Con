@@ -3052,3 +3052,185 @@ footer {
     font-style: italic;
     margin-top: var(--spacing-md);
 }
+
+/* Application Notes specific styles */
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-lg) 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.article-date, .article-author, .article-readtime {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0 var(--spacing-xl);
+}
+
+.article-tags .tag {
+    background: rgba(0, 114, 206, 0.1); /* Primary color with opacity */
+    color: var(--primary-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-element);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Enhanced layout for application notes content */
+.app-note-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.app-note-section h2 {
+    position: relative;
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.app-note-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--border-radius-element);
+}
+
+/* Enhanced accordion for application notes */
+.modern-accordion {
+    margin: var(--spacing-lg) 0;
+}
+
+.modern-accordion-item {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-element);
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+}
+
+.modern-accordion-header {
+    padding: var(--spacing-lg);
+    background: var(--background-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.modern-accordion-header:hover {
+    background: var(--hover-color);
+}
+
+.accordion-toggle {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    transition: transform 0.3s ease;
+}
+
+.modern-accordion-content {
+    padding: var(--spacing-lg);
+    background: var(--white);
+    display: none;
+}
+
+.modern-accordion-content.open {
+    display: block;
+}
+
+/* FAE Note styling for application notes */
+.fae-note {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-left: 4px solid var(--primary-color);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    border-radius: 0 var(--border-radius-component) var(--border-radius-component) 0;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+/* Table container for application notes */
+.app-note-table-container {
+    overflow-x: auto;
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--border-radius-element);
+    box-shadow: var(--shadow-medium);
+}
+
+.app-note-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.app-note-table th,
+.app-note-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.app-note-table th {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.app-note-table tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.app-note-table tr:hover {
+    background-color: rgba(0, 114, 206, 0.05);
+}
+
+/* Application Notes responsive design */
+@media (max-width: 768px) {
+    .app-note-section h2::after {
+        width: 40px;
+    }
+
+    .article-meta {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .modern-accordion-header {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-base);
+    }
+
+    .modern-accordion-content {
+        padding: var(--spacing-md);
+    }
+
+    .fae-note {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .app-note-table {
+        min-width: 400px;
+    }
+
+    .modern-accordion-header {
+        padding: var(--spacing-sm);
+    }
+}
