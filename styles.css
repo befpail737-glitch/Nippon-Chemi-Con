@@ -1685,6 +1685,24 @@ footer {
     box-shadow: var(--shadow-medium);
 }
 
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.contact-info-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xl);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-heavy);
+}
+
 .response-times-card {
     margin: var(--spacing-xl) 0;
 }
@@ -1737,6 +1755,10 @@ footer {
 
 @media (max-width: 768px) {
     .contact-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-grid {
         grid-template-columns: 1fr;
     }
 
@@ -3374,5 +3396,215 @@ footer {
 
     .modern-accordion-header {
         padding: var(--spacing-sm);
+    }
+}
+
+/* ========================================
+   MODULAR GRID SYSTEM
+   ======================================== */
+
+/* Base Grid Containers */
+.grid-solutions,
+.grid-benefits,
+.grid-industries,
+.grid-cases {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+    margin: var(--spacing-xl) 0;
+}
+
+/* Small Tablet: 2 columns (480px+) */
+@media (min-width: 480px) {
+    .grid-solutions,
+    .grid-benefits,
+    .grid-industries,
+    .grid-cases {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+}
+
+/* Tablet: 3 columns (768px+) */
+@media (min-width: 768px) {
+    .grid-solutions,
+    .grid-industries {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .grid-benefits,
+    .grid-cases {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+}
+
+/* Desktop: 4-5 columns (1024px+) */
+@media (min-width: 1024px) {
+    .grid-solutions {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large Desktop: Full columns (1200px+) */
+@media (min-width: 1200px) {
+    .grid-solutions {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid-benefits {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========================================
+   BASE CARD COMPONENT
+   ======================================== */
+
+.card-base {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-component);
+    padding: var(--spacing-xl);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-primary);
+    position: relative;
+}
+
+.card-base:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-heavy);
+}
+
+/* ========================================
+   CARD SUB-COMPONENTS (BEM)
+   ======================================== */
+
+.card__icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: var(--border-radius-element);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+.card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.card__body {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+.card__footer {
+    margin-top: auto;
+}
+
+.card__cta {
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semibold);
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.card__cta::after {
+    content: '→';
+    margin-left: var(--spacing-sm);
+    transition: transform 0.3s ease;
+}
+
+.card-solution:hover .card__cta::after {
+    transform: translateX(4px);
+}
+
+.card__accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--border-radius-component) var(--border-radius-component) 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-solution:hover .card__accent {
+    opacity: 1;
+}
+
+/* ========================================
+   CARD TYPE VARIANTS
+   ======================================== */
+
+/* Solution Cards */
+.card-solution {
+    /* Inherits all styles from .card-base */
+}
+
+/* Benefit Cards (centered text) */
+.card-benefit {
+    text-align: center;
+}
+
+.card-benefit .card__title {
+    color: var(--primary-color);
+}
+
+/* Industry Cards (centered, secondary color) */
+.card-industry {
+    text-align: center;
+}
+
+.card-industry .card__title {
+    color: var(--secondary-color);
+}
+
+/* Case Study Cards */
+.card-case .card__result {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: var(--font-weight-semibold);
+    margin-top: var(--spacing-md);
+}
+
+/* Responsive adjustments for cards */
+@media (max-width: 768px) {
+    .card-base {
+        padding: var(--spacing-lg);
+    }
+
+    .card__icon {
+        width: 50px;
+        height: 50px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-base {
+        padding: var(--spacing-md);
+    }
+
+    .card__title {
+        font-size: var(--font-size-base);
     }
 }
